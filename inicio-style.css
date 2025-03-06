@@ -1,0 +1,113 @@
+/* inicio-style.css */
+
+/* Estilo global */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+/* Pantalla de carga */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+/* Estilo para el texto de "DracK_Web" */
+.loading-animation {
+    text-align: center;
+    margin-top: 30px; /* Ajuste entre el texto y el spinner */
+}
+
+/* Fuente llamativa (Orbitron) */
+.loading-text {
+    font-size: 5rem; /* Tamaño de fuente más grande */
+    color: #fff;
+    margin-bottom: 30px; /* Ajuste del espacio entre el texto y el spinner */
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif; /* Fuente Orbitron */
+}
+
+/* Estilo para el spinner (círculo de carga) */
+.spinner {
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    border-top: 8px solid #fff;
+    border-radius: 50%;
+    width: 80px; /* Tamaño reducido */
+    height: 80px; /* Tamaño reducido */
+    animation: spin 1s linear infinite;
+    margin-top: 4cm; /* Mueve el spinner 4 cm hacia abajo */
+    margin-left: 5cm; /* Mueve el spinner 5 cm hacia la derecha */
+}
+
+/* Animación para el spinner */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Contenedor de login */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input:focus, button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+/* Importa la fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');

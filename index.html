@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drack012 - Inicio</title>
+
+    <meta name="description" content="Consulta los horarios de los juegos y vota por tu favorito en Drack012.">
+
+    <!-- Vinculamos la hoja de estilo CSS -->
+    <link rel="stylesheet" href="inicio-style.css">
+    <link rel="stylesheet" href="table-style.css">
+    
+    <!-- Vinculamos Google Fonts para la fuente Orbitron (más llamativa) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Pantalla de Carga -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-animation">
+            <!-- Texto DracK_Web con la fuente llamativa Orbitron -->
+            <span class="loading-text">DracK_Web</span>
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <!-- Contenedor Principal (se ocultará hasta que termine la carga) -->
+    <div class="login-container" id="loginPage" style="display: none;">
+        <h1>Iniciar Sesión</h1>
+        <form action="db.php" method="POST">
+            <input type="text" name="username" placeholder="Usuario" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <button type="submit">Ingresar</button>
+        </form>
+    </div>
+
+    <script src="script.js" async></script>
+</body>
+</html>
